@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sarapan Ceria</string>
+    <string name="title_activity_main">Sarapan Ceria</string>
+    <string name="package_name">com.sarapanceria.pos</string>
+    <string name="custom_url_scheme">com.sarapanceria.pos</string>
+</resources>
