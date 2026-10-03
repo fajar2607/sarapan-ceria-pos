@@ -58,9 +58,9 @@ git config --global --list
 
 4. Klik **"Create repository"**
 
-5. Setelah repository dibuat, **salin URL** yang tampil, contohnya:
+5. Setelah repository dibuat, **salin URL** yang tampil:
    ```
-   https://github.com/username-anda/sarapan-ceria-pos.git
+   https://github.com/fajar2607/sarapan-ceria-pos.git
    ```
 
 ---
@@ -122,10 +122,8 @@ git branch -M main
 
 ### 4.5 — Hubungkan ke repository GitHub
 
-Ganti `username-anda` dengan username GitHub Anda:
-
 ```bash
-git remote add origin https://github.com/username-anda/sarapan-ceria-pos.git
+git remote add origin https://github.com/fajar2607/sarapan-ceria-pos.git
 ```
 
 ### 4.6 — Upload (push) ke GitHub
@@ -143,7 +141,7 @@ Anda akan diminta login GitHub (jika belum). Ikuti petunjuk di terminal.
 Buka browser dan kunjungi:
 
 ```
-https://github.com/username-anda/sarapan-ceria-pos
+https://github.com/fajar2607/sarapan-ceria-pos
 ```
 
 Jika semua file sudah muncul di sana — **selamat, proyek berhasil diupload!** 🎉
@@ -221,7 +219,7 @@ Kemudian buat **Pull Request** di GitHub untuk menggabungkan branch ke `main`.
 
 ```bash
 git remote remove origin
-git remote add origin https://github.com/username-anda/sarapan-ceria-pos.git
+git remote add origin https://github.com/fajar2607/sarapan-ceria-pos.git
 ```
 
 ### ❌ Error: `failed to push — Updates were rejected`

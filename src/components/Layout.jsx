@@ -9,7 +9,9 @@ import {
   LogOut,
   Menu,
   Coffee,
-  WifiOff
+  WifiOff,
+  Cloud,
+  CloudOff
 } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { format } from 'date-fns';
@@ -69,7 +71,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
 const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const { isOffline, setOfflineStatus } = useStore();
+  const { isOffline, setOfflineStatus, isFirebaseConnected, isFirebaseConfigured } = useStore();
   const location = useLocation();
 
   useEffect(() => {
@@ -126,8 +128,44 @@ const Layout = () => {
             </button>
             <h1 className="header-title">{getPageTitle()}</h1>
           </div>
-          <div className="header-date">
-            {format(new Date(), 'EEEE, dd MMM yyyy')}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            {isFirebaseConnected ? (
+              <span 
+                title="Sinkronisasi Cloud Multi-User Aktif"
+                style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '6px', 
+                  fontSize: '0.8rem', 
+                  color: '#16a34a', 
+                  background: '#dcfce7', 
+                  padding: '4px 10px', 
+                  borderRadius: '16px',
+                  fontWeight: 500
+                }}
+              >
+                <Cloud size={14} /> Cloud Sync
+              </span>
+            ) : isFirebaseConfigured ? (
+              <span 
+                title="Menghubungkan ke Cloud..."
+                style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '6px', 
+                  fontSize: '0.8rem', 
+                  color: '#d97706', 
+                  background: '#fef3c7', 
+                  padding: '4px 10px', 
+                  borderRadius: '16px' 
+                }}
+              >
+                <Cloud size={14} /> Sinkron...
+              </span>
+            ) : null}
+            <div className="header-date">
+              {format(new Date(), 'EEEE, dd MMM yyyy')}
+            </div>
           </div>
         </header>
         

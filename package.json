@@ -17,6 +17,7 @@
     "@capacitor/share": "^8.0.1",
     "@capacitor/splash-screen": "^8.0.1",
     "date-fns": "^4.1.0",
+    "firebase": "^12.19.0",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.7",
     "localforage": "^1.10.0",

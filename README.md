@@ -33,7 +33,8 @@ Dibangun menggunakan **React + Vite** sebagai web app, lalu dibungkus menjadi **
 | 🍱 **Manajemen Produk** | Kelola daftar menu beserta harga beli & jual |
 | 📊 **Laporan Historis** | Lihat riwayat penjualan per hari/bulan |
 | 📄 **Ekspor PDF** | Cetak laporan harian dalam format PDF |
-| 📶 **Offline-First** | Berjalan tanpa internet, data tersimpan lokal |
+| ☁️ **Sinkronisasi Multi-User** | Real-time sync via Firebase antar perangkat tanpa OAuth |
+| 📶 **Offline-First** | Berjalan lancar tanpa internet, data tersimpan lokal |
 | 📱 **Aplikasi Android** | Bisa diinstal sebagai APK di HP kasir |
 
 ---
@@ -44,6 +45,7 @@ Dibangun menggunakan **React + Vite** sebagai web app, lalu dibungkus menjadi **
 - **State Management**: [Zustand 5](https://zustand-demo.pmnd.rs/)
 - **Routing**: [React Router DOM 7](https://reactrouter.com/)
 - **Storage (Offline)**: [LocalForage](https://localforage.github.io/localForage/)
+- **Backend / Multi-User Sync**: [Firebase Cloud Firestore](https://firebase.google.com/)
 - **PDF Generator**: [jsPDF](https://artskydj.github.io/jsPDF/) + [jspdf-autotable](https://github.com/simonbengtsson/jsPDF-AutoTable)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Date Utility**: [date-fns](https://date-fns.org/)
@@ -64,7 +66,7 @@ Dibangun menggunakan **React + Vite** sebagai web app, lalu dibungkus menjadi **
 ### 1. Clone / Download Proyek
 
 ```bash
-git clone https://github.com/username/sarapan-ceria-pos.git
+git clone https://github.com/fajar2607/sarapan-ceria-pos.git
 cd sarapan-ceria-pos
 ```
 
